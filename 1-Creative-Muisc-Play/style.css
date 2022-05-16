@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  cursor: none;
+  overflow: hidden;
+}
+
+.cursor {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #77797A;
+  border-radius: 50%;
+  transition: width 0.25s, height 0.25s;
+}
+
+.is-down {
+  width: 80px;
+  height: 80px;
+  background-image: url(https://s3.bmp.ovh/imgs/2022/05/16/0e95260ae64b3459.gif);
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+}
+
+.text-cover, .music-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.scratched-out {
+  mix-blend-mode: darken;
+}
+
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
